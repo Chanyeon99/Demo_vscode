@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+.container--img {
+    width: 200px;
+    height: 200px;
+}
+.header {
+
+}
+.header--title {
+    text-align: center;
+    color: aqua;
+    background-color: chartreuse;
+}

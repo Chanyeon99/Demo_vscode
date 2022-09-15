@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box sizing</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            color: #fff;
+            background-color: darkorchid;
+            padding: 15px;
+            border: 2px solid purple;
+            /*border-box: duy trì bằng nhau, content-box: trở về như khi ko set bosizing, */
+            box-sizing: border-box;
+        }
+        .box {
+            box-sizing: unset;/*HỦy đi border-box đã xét ở trên*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is the content of the post
+    </div>
+</body>
+</html>

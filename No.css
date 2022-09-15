@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #E5E5E5;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+}
+.apps {
+    background-color: #fff;
+    width: 350px;
+    height: 700px; 
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    Transform: translate(-50%, -50%);
+
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 10px 15px;/*top left_right bottom */
+}
+.header_right {
+    display: flex;  
+}
+
+.title_header {
+    font-weight: bold;
+}
+.header_ikon--right {
+    margin-left: 105px;
+    margin-right: 30px; 
+
+}
+.body_first {
+    margin: 21px;
+    display: flex;
+}
+.body_first--ava {
+    background-color: #D75353;
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+}
+.body_info {
+    font-size: 21px;
+    font-style: normal;
+    font-family: Roboto;
+    display: flex;
+}
+.info_first {
+    margin: 15px;
+}
+.event {
+    font-size: 12px;
+}
+.info_second {
+    
+}
+a {
+    text-decoration: underline;
+}
+.profile_name {
+    size: 23px;
+    line-height: 27px;
+}
+.profile_opacity {
+    opacity: 0.6;
+}
+.btn {
+    padding: 8px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.btn__follow {
+    border: none;
+    background-color: #4192EF;
+    color: #fff;
+}
+.btn__same {
+
+}
+.btn__more {
+    padding: 6px 8px;
+}
+.story {
+    display: flex;
+    margin: 13px;
+}
+.story_pink {
+    margin: 8px;
+}
+.image_s {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #D75353;
+   
+}
+.highlight {
+    font-size: 12px;
+}
+.body_home {
+    display: flex;
+    justify-content: center;
+    margin: 10px 40px;
+}
+.line_first {
+    display: flex;
+}
+.image_one {
+    background-color: #D75353;
+    width: 33%;
+    height:100px;
+}
+.ikon_page {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.story_ikon {
+    border-radius: 50%;
+    background-color: #D75353;
+    width: 16px;
+    height: 16px;
+    
+}

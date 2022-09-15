@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Unit?</title>
+    <link rel="stylesheet" href="Bai13.css">
+    <!--khi dùng absolute unit pixel cho chữ hay hình thì nó sẽ ko bị thay đổi khi những yếu tố xung quanh thay đổi nhưn trình duyệt thay đổi-->
+    <!--khi dùng relative unit % cho chữ hay hình, hay define 1 object có value tương đối thì kích thức object nó phục thuộc sẽ change-->
+    <style>
+        /* vw - width , vh -height*/
+        /*viewport*/
+        .box2 {
+            width: 50vw;
+            height: 60vh;
+            background-color: brown;
+        }
+        /*tag rem depends on the tag Html*/
+        html {
+            font-size: 40px;
+        }
+        h1 {
+            font-size: 1rem;
+        }
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+        }
+        
+</style>
+    <style>
+        .box {
+            width: 50%;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <h1>relative unit %</h1>
+    <div class="box"></div>
+    <h1>relative unit viewport -width, height</h1>
+    <div class="box2"></div>
+    <div>
+        <h1>CSS units?</h1>
+        <h2>1. Absolute units?</h2>
+        <ul>
+            <li>px</li>
+            <p>Pixels, abbreviated as "px", are also a unit of measurement commonly used in graphic and web design, equivalent to roughly 1⁄96 inch (0.26 mm). 
+                This measurement is used to make sure a given element will display as the same size no matter what screen resolution views it. </p>
+            <p>Điểm ảnh, viết tắt là "px", cũng là một đơn vị đo lường thường được sử dụng trong thiết kế đồ họa và web, tương đương với khoảng 1 ⁄ 96 inch (0,26 mm). 
+                Phép đo này được sử dụng để đảm bảo một phần tử nhất định sẽ hiển thị ở cùng một kích thước bất kể độ phân giải màn hình xem phần tử đó. </p>
+            <li>pt</li>
+            <li>cm</li>
+            <li>mm</li>
+            <li>inch</li>
+            <li>pc</li>
+        </ul>
+        <h2>2. Relatie units.</h2>
+        <ul>
+            <li>%</li>
+            <p>% depends on the tag containing it </p>
+            <li>rem</li>
+            <p>depends on the tag HTML </p>
+            <li>em</li>
+            <li>vw</li>
+            <li>vh</li>
+            <li>vmin</li>
+            <li>vmax</li>
+            <li>ex</li>
+            <li>ex</li>
+            <li>ch</li>
+        </ul>
+    </div>
+</body>
+</html>

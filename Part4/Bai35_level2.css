@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+     margin: 0;
+}
+body, html {
+    font-family: "Helvetica Neue";
+    height: 100vh;
+    display: flex;
+    background-color: #f4f4f5;
+    justify-content: center;
+}
+body > div {
+    margin: auto;
+}
+#toast {
+    position: fixed;
+    right: 32px;
+    top: 32px;
+}
+.toast {
+    margin-top: 15px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    border-left: 5px solid;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+    animation: slideInleft ease .5s;/*into delay after 3 second will start fade out in 1 second*/
+    transition: all linear 0.3s;
+}/*horizontal: 0, vertical: 0, radius: 10px */
+@keyframes slideInleft {
+    from {
+        transform: translateX(calc(100% + 32px));
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes FadeOut {
+    to {
+        opacity: 0;
+    }
+}
+.toast__icon,
+.toast__close {
+    padding: 0px 16px;
+
+}
+.toast__icon {
+    font-size: 24px;
+}
+.toast__body {
+    flex-grow: 1;
+}
+.toast__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+.toast__msg {
+    font-size: 14px;
+    color: #888;
+    margin-top: 4px;
+    line-height: 1.6;
+}
+.toast__close {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.toast__success {
+    border-color: aqua;
+} 
+.toast__success .toast__icon {
+    color: aqua;
+}
+.toast__info {
+    border-color: aquamarine;
+} 
+.toast__info .toast__icon {
+    color: aquamarine;
+}
+.toast__warn {
+    border-color: #ffc021;
+}
+.toast__warn .toast__icon{
+    border-color: #ffc021;
+}
+.toast__error {
+    border-color: #ff623d;
+}
+.toast__error .toast__icon{
+    border-color: #ff623d;
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    /* outline: none; */
+    color: #fff;
+    padding: 12px 48px;
+    border-radius: 50px;
+    cursor: pointer;
+    min-width: 120px;
+    transition: opacity 0.2s ease;
+    margin-left: -220px;
+    margin-left: 16px;;
+}
+
+.btn--success {/*priority: */
+    background-color: green;
+}
+.btn--warn {
+    background-color: purple;
+}

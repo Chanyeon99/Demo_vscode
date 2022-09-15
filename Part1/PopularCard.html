@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+    1. h1 - h6, h1:header; h2-h6:chữ sẽ nhỏ dần
+    2. p :paragragh// content
+    3. img : add image 
+    4. a - anchor(Mỏ neo): neo lien ket
+    5. ul, li : unordered list:tùy ý sắp xếp thứ tự, list item:List contain many elemets inside
+    6. table
+    7. input
+    8. button
+    9.div//khối bao quanh dùng page ruler để đo
+-->
+ <!--When writing an external file, for that external file, it can be CSS for the contents of the html file inside, 
+    we have to link the css file with the file -->
+<html>
+    <head>
+        <title>Popular card in HTML</title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <div>
+            <h1>Thuộc tính phương thức <form> HTML</h1>
+                <button>Sign in</button>
+                <h5>fill the blank</h5><input type="text"><!--fill the blank-->
+                <h5>Checkbox</h5>
+                <input type="checkbox"><!---->
+                <input type="checkbox">
+                <input type="checkbox">
+                <h4>Gende<r/h4>
+                <input name="gender" type="radio"><!---->
+                <input name="gender" type="radio">
+                <input name="gender" type="radio">
+                <h3>Definition and Usage</h3>
+                <p>The method attribute specifies how to send form-data (the form-data is sent to the page specified in the action attribute).            
+                    The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").        </p>
+                <h3>Notes on GET:</h3>
+                Appends form-data into the URL in name/value pairs
+                The length of a URL is limited (about 3000 characters)
+                Never use GET to send sensitive data! (will be visible in the URL)
+                Useful for form submissions where a user wants to bookmark the result
+                GET is better for non-secure data, like query strings in Google
+            </p>
+            <img src="https://aspblogs.blob.core.windows.net/media/fredriknormen/WindowsLiveWriter/UsingWebServicesina3tierarchitecture_134F6/3tier_WebService_2.jpg" alt="Web three tier architecture">
+            <a href="https://www.youtube.com/watch?v=43TVwPxgndE&list=PLW1k06REn7HsHn6D6e27gtFm">go to the web three tier architecture</a>
+            <ul>
+                <li>Presentation layer </li>
+                <li>Business logic </li>
+                <li>Data Access Layer</li>
+            </ul>
+            <table>
+                <thead><!--stands for table head is the head of table-->
+                    <th>STT</th><!--table heading, th*2, th*3, th*n viết nhanh-->
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Age</th>
+                </thead>
+                <tbody><!--stands for table body is the body of table-->
+                    <tr><!--trong table row có các thẻ td corresponding với thẻ th, td*4 -->
+                        <td>1</td><!--table data-->
+                        <td>Parck Chan Yeon</td>
+                        <td>Ha Noi</td>
+                        <td>20</td>
+                    </tr><!--table row: dòng-->
+                    <tr>
+                        <td>2</td><!--table data-->
+                        <td>Lalisa</td>
+                        <td>Thailand</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Rose</td>
+                        <td>Australia</td>
+                        <td>25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

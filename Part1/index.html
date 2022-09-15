@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--html:Chứa nội dung web site trong thẻ này-->
+<head>
+    <meta charset="UTF-8">
+
+    <title>Servlet</title>
+</head>
+<body><!--There are elements for sections of the page, image, text, and more
+Có các phần tử cho các phần của trang, hình ảnh, văn bản, v.v.
+-->
+    Execution of Servlets basically involves six basic steps: 
+The clients send the request to the webserver.
+The web server receives the request.
+The web server passes the request to the corresponding servlet.
+The servlet processes the request and generates the response in the form of output.
+The servlet sends the response back to the webserver.
+The web server sends the response back to the client and the client browser displays it on the screen.
+Now let us do discuss eccentric point that why do we need For Server-Side extensions?
+
+The server-side extensions are nothing but the technologies that are used to create dynamic Web pages. Actually, to provide the facility of dynamic Web pages, Web pages need a container or Web server. To meet this requirement, independent Web server providers offer some proprietary solutions in the form of APIs(Application Programming Interface). 
+These APIs allow us to build programs that can run with a Web server. In this case, Java Servlet is also one of the component APIs of Java Platform Enterprise Edition which sets standards for creating dynamic Web applications in Java. 
+
+Before learning about something, it’s important to know the need for that something, it’s not like that this is the only technology available for creating dynamic Web pages. The Servlet technology is similar to other Web server extensions such as Common Gateway Interface(CGI) scripts and Hypertext Preprocessor (PHP). However, Java Servlets are more acceptable since they solve the limitations of CGI such as low performance and low degree scalability.  
+
+What is CGI?
+
+CGI is actually an external application that is written by using any of the programming languages like C or C++ and this is responsible for processing client requests and generating dynamic content. 
+In CGI application, when a client makes a request to access dynamic Web pages, the Web server performs the following operations :  
+
+It first locates the requested web page i.e the required CGI application using URL.
+It then creates a new process to service the client’s request.
+Invokes the CGI application within the process and passes the request information to the application.
+Collects the response from the CGI application.
+Destroys the process, prepares the HTTP response, and sends it to the client.
+</body>
+</html>

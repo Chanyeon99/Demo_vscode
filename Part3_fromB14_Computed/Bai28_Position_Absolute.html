@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background_origin</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+        li:nth-of-type(4) {
+            color: orange;
+        }
+       p {
+           color:purple;
+       }
+       .box-father {
+        width: 300px;
+        height: 120px;
+        background-color: blueviolet;
+        position: relative;
+       }
+       /* .box-child {
+           
+           background-color: rgba(255, 255, 255, 0.5);
+           position: absolute;
+        top: 0;
+           right: 0;
+           bottom: 0;
+           left:0; 
+       } */
+        .box-child{
+            background-color: #fff;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 0;right:0;
+       }
+       #Li {
+           font-size: 70px;
+       }
+    </style>
+</head>
+<body>
+    <div class="box-father">
+HI
+        <div class="box-child"></div>
+    </div>
+    <h1>Position: Absolute</h1>
+    <ol>
+        <li>Relative</li>
+        <p>Object have the relative position, it will take the current position it is currently standing at to be coordinate root</p>
+        <li style="color: red" id="Li" >Absolute</li>
+        <p>and absolute position will be different, Absolute position will dependent on the near parent tag have the position attribute, to get that parent tag as the root coordinates</p>
+        <li>Fixed</li>
+        <p>Fixed is location depend on browser's frame</p>
+        <li>Sticky</li>
+    </ol>
+</body>
+</html>

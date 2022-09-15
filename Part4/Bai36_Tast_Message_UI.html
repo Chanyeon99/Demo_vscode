@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM </title>
+    <link rel="stylesheet" href="Bai36.css">
+</head>
+<body>
+    <div id="toast">   <!--Success--> </div>
+    
+    <div>
+        <div class="btn btn--success">Show success toast </div>
+        <!-- <div class="btn btn btn--error">Show error toast</div> -->
+    </div>
+    <script src="https://kit.fontawesome.com/3e9c9df1a4.js" crossorigin="anonymous"></script>
+    <script>
+        function toast({/*set Default*/
+            title='',
+            message='', 
+            type='info', 
+            duration = 3000
+            }) {
+            const main = document.getEmentVyId('Toast');
+            if (main) {//Default the first page will be blank, check if there is main will continue handle
+                const toast = document.createElemnet('div');//class cha của toast
+                toast.classList.add('toast');
+                toast.innerHTML = `      
+        <div class="toast__icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div class="toast__body">
+                <h3 class="toast__title">Success</h3>
+                <p class="toast__msg">The computer connect Internet(Ubuntu, Window, MacOS)</p>    
+            </div>
+            <div class="toast__close"><i class="fa-solid fa-xmark"></i></div>
+       
+                `;
+                main.appendChild(toast);
+            }    
+        }
+        toast({//excute if have main
+            title: 'Success',
+            message: 'The computer connect with internet (ubutu, Wdindows, or MacOS)',
+            type: 'success', 
+            duration: 3000/*display in time: 3000*/
+        });
+    </script>
+</body>
+</html>

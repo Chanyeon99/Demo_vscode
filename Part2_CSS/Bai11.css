@@ -1,0 +1,12 @@
+* {
+    color: red;
+}
+li {
+    color: blue !important;
+}
+html {
+    color: brown;
+}
+li {
+    color: green; 
+}

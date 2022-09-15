@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0
+}
+body {
+        height: 100vh;
+        /* display: flex; */
+        flex-direction: column;
+        font-family: "Helvetica Neue";
+        background-color: #fff; 
+}
+body > div {
+    margin: auto;
+  }
+.btn {
+   display: inline-block;
+   text-decoration: underline;
+   background-color: transparent; 
+   border: dashed;
+   outline: none;
+   color: #fff;
+   /*Tămg độ dày của nút dùng padding*/
+   padding: 12px 48px;
+   border-radius: 50px;
+   cursor: pointer;/*display the hand*/
+   transition: opacity .2s ease;
+   min-width: 140px;/*chiều ngang minimum */
+}
+.btn--size-l {/*sửa kích cỡ nút to hơn*/
+    padding: 18px 58px; 
+}
+.btn--size-s {
+    padding: 10px 38px;
+}
+.btn--success {
+    background-color: #4ecc00;
+}
+.btn--warm {
+    background-color: #cc3a00;
+}
+.btn--danger {
+    background-color: #00c6cc;
+}
+.btn:hover {
+    color: red;
+    opacity: 0.8;
+}
+.btn + .btn {
+    margin-left: 36px;/*đẩy các nút ra xa nhau*/
+}
+.btn--disabled {
+    opacity: 0.5;
+}

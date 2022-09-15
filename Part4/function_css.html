@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+        .box {
+            width: calc(120px + 20px);
+            height: 120px;
+            background: rgb(240, 26, 151);
+
+        }
+        .box::after {
+            content: attr(data-title);
+        }
+        a::after {
+            content: " (" attr(href) ")";
+        }
+    </style>
+</head>
+<body>
+    <div class="box" data-title=""This is the pink box></div>
+    <h1>Function Css</h1>
+    <a href="https://duythanhcse.wordpress.com/category/java-backend/"> learn java backend</a>
+    <ul> 
+        <li>var()</li>
+        <li>linear-gradient()</li>
+        <li>rgba()</li>
+        <li> rgb()</li>
+        <li>calc()</li>
+        <li> attr()</li>
+    </ul>
+</body>
+</html>

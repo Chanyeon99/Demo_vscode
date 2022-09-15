@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Margin</title>
+    <style>
+        .box {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*Giúp tất cả các element chịu sự ảnh hưởng đẩy snag bên trái*/
+            /* float: left; */
+        }
+        .box1 {
+            background-color: blue;
+            margin-left: 20px;
+        }
+        .box2 {
+            background-color: brown;
+            margin-left: 50px;
+        }
+        .box3 {
+            background-color: purple;
+            /*gọi tắt*/
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>Margin creates a distance that pushed box1 & box2 apart</div>
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+<p>Margin isn't understood as the layer that wraps the whole element of us, it is understood as the distance pushed out from E </p>
+<p>Margin ko đc hiểu là lớp bao bọc toàn bộ E, nó được hiểu là khoảng cách đẩy ra từ E </p>
+</body>
+</html>

@@ -1,0 +1,13 @@
+:root {/*set variable by type global-use anywhere in html file,  use lớp giả root*/
+    --yen: brown;
+}
+h1 {/*set variable by type local, set in a specific selector*/
+    --my-color: blue;
+    color: var(--my-color);
+}
+h2 {
+    color: var(--yen);
+}
+h3 {
+    color: var(--yen);
+}

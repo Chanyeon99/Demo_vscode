@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Helvetica Neue";
+    background-color: #f4f4f5;
+  }
+  body > div {
+    margin: auto;
+  }
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 12px 48px;
+    border-radius: 50px;
+    cursor: pointer;
+    min-width: 120px;
+    transition: opacity 0.2s ease;
+    margin-left: -220px;
+  }
+  .btn + .btn {
+    margin-left: 16px;
+  }
+  .btn--success {/*priority: */
+      background-color: green;
+  }
+  .btn--warn {
+      background-color: purple;
+  }
+  .btn--danger {
+      background-color: pink; 
+  }
+  .btn:hover {
+      opacity: 0.8;
+  }
+  /*tăng độ dài của nút dùng padding*/
+   /* .btn--size-l {
+    padding: 16px 56px;
+  }
+  .btn--size-s {
+    padding: 8px 32px;
+  } */

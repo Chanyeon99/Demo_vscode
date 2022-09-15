@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <style>
+        html, body {
+            margin: 0;
+        }  
+        .multidimensional {
+            width: calc(120px + 100px);
+            height: 120px;
+            background: rgb(130, 76, 192);
+        }
+        /* .multidimensional::after {
+            content: "The rest is up to u and your imagination";
+        } */
+        .multidimensional::after {
+            content: attr(lalisa);
+        }
+        a::after {
+            content: " (" attr(href) ")";
+        }
+        /*attr() stand for attribute*/
+    </style>
+</head>
+<body>
+    <div class="multidimensional" lalisa="this is pink box" title="This is box which is I created"></div>
+    <a href="https://fullstack.edu.com.vn">Learn programming(https://fullstack.edu.vn)</a>
+    <h1>Functions Css</h1>
+    <div>
+        <p>Các hàm trong css</p>
+        <ol>
+            <p>variable</p>
+            <li>var()</li>
+            <p>background image</p>
+            <li>linear-gradient()</li>
+            <li>rgba()</li>
+            <p style="color: blue">rgb different from rgba in which it doesn't have an alpha parameter, so rgb can't make transparent colors</p>
+           
+            <li>rgb()</li>
+            <li>calc()</li>
+            <li>attr()</li>
+        </ol>
+    </div>
+</body>
+</html>

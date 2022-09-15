@@ -1,0 +1,32 @@
+<!DOCTYPE html><!--repeat background stock image -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background image</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+        /*rgb() khacs voiws rgba() laf ko cos tham so an fa, ko co mau trong suot*/
+        .header {
+            width: 100%;
+            height: 100vh;/*rgba:red, green, blue, anfa*/
+            background-image:linear-gradient(0, rgba(255,255,0.5), rgba(0,0,255 ,0.5)),/*hướng xoay của dải màu chuyển */
+             url(https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX1548185.jpg); 
+            background-size: 100px auto;
+            /*ảnh viết trước sẽ đc đè lên trên*/
+            /* url(https://pngimg.com/uploads/star/star_PNG41474.png);  */
+             /* url(https://viettuts.vn/images/jsp/jsp-la-gi.png);
+           /*
+            background-repeat: no-repeat; */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>hello</h1>
+    </div>
+
+</body>
+</html>

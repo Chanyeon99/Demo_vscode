@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create project The band </title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2912/2912048.png" type="image/png"/>
+    <link rel="stylesheet" href="Lesson1.css">
+    <link rel="stylesheet" href="./themify-icons-font/themify-icons/themify-icons.css"><!--link:css-->
+    <link rel="stylesheet" href="responsive.css">
+  </head>
+<body>
+  <div id="main">
+    <div id="header">
+      <ul id="nav">
+        <li><a href="#">Home </a></li>
+        <li><a href="#band">Band</a></li>
+        <li><a href="#tour">Tour</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><!--caret down : dấu mũ xuống-->
+          <a href="#">More <i class="fa-solid fa-caret-down"></i> </a>
+          <ul class="subnav">
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Extras</a></li>
+            <li><a href="#">Media</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!--Begin: search buttons-->
+      <div class="search-btn">
+        <i class="search-ikons ti-search"></i> <!--i.ti-search-->
+      </div>
+      <div id="mobile-menu" class="mobile__menu-btn">
+        <i class="menu-icon ti-menu"></i>
+      </div>
+    </div>
+    <div id="slider">
+      <!--picture have postion relative same, còn chữ trên picture có position absolute để chữ hiển thị trên ảnh
+      -->
+      <div class="text_content">
+        <h2 class="text-heading"> BigBang</h2>
+        <p class="text-description">Still life, It's a bad day not a bad life</p>
+      </div>
+    </div>
+    <div id="content">
+      <!--ABOUT SECTION-->
+      <div id="band" class="content-section">
+        <h2 class="section_heading">Programming</h2>
+        <p class="sub_heading_opacity">I love coding</p>
+        <p class="about">The background images are drawn on stacking context layers on top of each other. The first layer specified is drawn as if it is closest to the user.
+          The borders of the element are then drawn on top of them, and the background-color is drawn beneath them. How the images are drawn relative to the box and its borders is defined by the background-clip and background-origin CSS properties.
+          If a specified image cannot be drawn (for example, when the file denoted by the specified URI cannot be loaded), browsers handle it as they would a none value. 
+        </p>
+        <div class="row members_list">
+          <div class="col col-third text-center member-item"> 
+            <p class="member_name"> Annie</p>
+            <img src="./img/me.jpg" alt="namne" class="member_img">
+          </div>
+          <div class="col col-third text-center member-item">
+            <p class="member_name">Jymmi</p>
+            <img src="./img/hand_me.jpg" alt="name" class="member_img">  
+          </div>
+          <div class="col col-third text-center member-item">
+            <p class="member_name">Harum</p>
+            <img src="./img/foth.jpg" alt="name" class="member_img">
+          </div>
+          <!-- <div class="clear"></div> -->
+        </div>
+      </div>
+      <!--Tour date-->
+      <div id="tour" class="tour_section">
+        <div class="content-section"> 
+          <h2 class="section_heading text-white">Frontend</h2>
+          <p class="sub_heading_opacity text-white"> The first programming skill i learn seriously</p>
+          <ul class="tickets-list">
+            <li>Septenber <span class="sold-out">Sold out</span></li>
+            <li>October <span class="sold-out">Sold out</span> </li>
+            <li> November <span class="quantity">3</span></li><!--số lượng vé còn lại -->
+          </ul><!--quantity: số lượng vé còn -->
+          <!--ul.tickets-list>li*3-->
+          <div class="row place_list"> 
+            <div class="col col-third s-col-ful"> 
+              <img src="./img/newyork.jpg" alt="" class="place-img">
+              <div class="place-body">
+              <p class="place-heading">Newyork</p>
+              <p class="place-time"> Fri 27 Nov 2016</p>
+              <p class="place-desc">Where there's a will there's a way,or seemingly impossible</p>
+              <button class="btn js-buy-tickets">Buy tickets</butt>
+              </div><!--The pound sign means don't switch to another site-->
+            </div> 
+            <div class="col col-third s-col-ful">
+              <img src="./img/paris.jpg" alt="" class="place-img">
+              <div class="place-body">
+                <p class="place-heading">Paris</p>  
+                <p class="place-time">Sat 28 Nov 2016</p>
+                <p class="place-desc">If we are determined to do something, we will get it done</p>
+                <button href="#" class="btn js-buy-tickets">Buy tickets</butt>
+              </div>
+            </div>
+            <div class="col col-third s-col-ful">
+              <img src="./img/sanfran.jpg" alt="" class="place-img">  
+              <div class="place-body">
+                <p class="place-heading">San Francisco</p>  
+                <p class="place-time">Sun 29 Nov 2016</p>
+                <p class="place-desc">This will be the case even if it is challenging, difficult</p>
+                <button href="#" class="btn js-buy-tickets" >Buy Tickets</button>
+              </div>
+            </div>
+            <!-- <div class="clear"></div> -->
+          </div>
+        </div> 
+      </div>
+      <!--secttion 3: contact-->
+      <div id="contact" class="content-section">
+        <h2 class="section_heading"> Contact</h2> 
+        <p class="sub_heading_opacity">Call me if u need </p>
+        <div class="row contact-content"><!--.row>.col.col-half*2 + tab-->
+          <div class="col col-half s-col-ful contact-info">
+            <p> <i class="ti-location-pin"></i>Chicago, US</p>
+            <p><i class="ti-mobile"></i>Phone: <a href="tel: 0327303367">0327303367</a></p>
+            <p><i class="ti-email"></i>Emai: <a href="mailto: yen66188@gmail.com">yen66188@gmail.com</a></p>
+          </div>
+          <div class="col col-half margin-mobile">
+            <form action="">
+              <div class="row">
+                <div class="col col-half s-col-ful mt-8"><!--input:text.form-control-->
+                  <input title="Please fill out this field" type="text" name="" placeholder="Name" required id="" class="form-control">
+                </div>
+                <div class="col col-half s-col-ful mt-8">
+                  <input title="Please fill out this field" type="text" name="" placeholder="Email" required id="" class="form-control">
+                </div>
+                <!-- <div class="clear"></div> -->
+                <!-- <div class="clear"></div> -->
+              </div>
+              <div class="row margin_top_8">
+                <div class="col col-full">
+                  <input title="Please fill out this field" type="text" name="" placeholder="Message" id="" class="form-control">
+                </div>
+              </div>
+              <input type="submit" value="SEND" class="mt_16 btn pull-right">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="map-section">
+      <img src="https://www.w3schools.com/w3images/map.jpg" alt="" class="">
+    </div>
+    <div id="footer">
+      <div class="social-list">
+          <a href=""><i class="ti-facebook"></i></a>
+          <a href=""><i class="ti-instagram"></i></a>
+          <a href=""><i class="ti-github"></i></a>
+          <a href=""><i class="ti-pinterest"></i></a>
+          <a href=""><i class="ti-twitter"></i></a>
+          <a href=""><i class="ti-linkedin"></i></a>
+      </div>
+      <p class="copyright">Powered by <a href="">w3.css</a></p>
+    </div>  
+    <div class="model js-model">
+      <div class="model-container js-model-container">
+        <div class="model-close js-model-close">
+          <i class="ti-close"></i>
+        </div>
+      <div class="model-header">
+        <i class="fa-solid fa-suitcase"></i>
+        <p class="model-heading">Tickets</p>
+      </div>
+      <div class="model_body">
+        <label for="quantity" class="model-label">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Tickets, $15 per person
+        </label> 
+        <input id="quantity" type="text" class="model-input" placeholder="How many?"> 
+        <label for="email-label" class="model-label">
+          <i class="ti-user"></i>
+          Send to
+        </label>
+        <input id="email-label" type="text" class="model-input" placeholder="Enter email">
+        <button id="buy-tickets">
+          Pay
+          <i class="fa-solid fa-check"></i>
+        </button>
+        <footer class="model-footer"> 
+          <button class="model-btn_close"> 
+            Close
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <p class="model-help">Need <a href="">Help?</a> </p>
+        </footer>
+      </div>
+    </div>
+  </div>  
+</div>
+<script> 
+  const buyBtns = document.querySelectorAll('.js-buy-tickets')
+  const model = document.querySelector('.model')
+  const modelContainer = document.querySelector('.js-model-container')
+  const modelClose = document.querySelector('.js-model-close')
+  function showBuyTickets() {/*click on Buy Ticket */
+    model.classList.add('open')
+  }
+  function hideBuyTickets() {
+    model.classList.remove('open')
+  }
+  for (const buyBtn of buyBtns) {/*create a new available buyBtn*/
+    buyBtn.addEventListener('click', showBuyTickets)
+  }/*click on buyBtn display showbuyTicket*/
+  modelClose.addEventListener('click', hideBuyTickets)
+  model.addEventListener('click', hideBuyTickets)
+  modelContainer.addEventListener('click', function (event) {
+    event.stopPropagation()
+  } )
+  /*stopPropagation: pause */
+  /*click v*/
+</script>
+<script>
+  var header = document.getElementById('header');
+  var mobileMenu = document.getElementById('mobile-menu');
+  var headerHeight = header.clientHeight;
+  /*Close/ Open Mobile menu */
+  mobileMenu.onclick = function() {
+    /*check height of header */
+    var isClosed = header.clientHeight === headerHeight;
+    if (isClosed) {
+      header.style.height = 'auto';/*If the Button closed, click it to Open*/
+    } else {
+      header.style.height = null;
+    }
+  }/*Tự động đóng khi chọn menu.*/
+//Automatically close when selecting menu 
+  var menuItems = document.querySelectorAll('#nav li a[href*="#"');//take out all the ones marked with # 
+//Lấy ra tất cả những cái được đánh dấu bằng #
+  for (var i = 0; i < menuItems.length; i++) {
+    var menuItem = menuItems[i];
+    menuItem.onclick = function () {/*nếu không phải ParentMenu thì mới ẩn cái Menu đi.*/
+      var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+      if(isParentMenu) {/*If it's not ParentMenu, then hide the Menu*/
+        event.preventDefault();/*Remove the default behavior*/
+      }else {
+          header.style.height = null;
+        }
+    }
+  }
+</script>
+<script src="https://kit.fontawesome.com/3e9c9df1a4.js" crossorigin="anonymous"></script>
+</body>
+</html>
+<!--Copy many of the same words to css-->
+<!--Ctrl + D
+<i class="fa-solid fa-magnifying-glass"></i>-->
+<!--copy many different words to css-->
+<!--Ctrl+ shift+ L-->
+<!--shift + Alt + right arrow (->)--> 
+<!--paste to css + click in front of the first letter of the first line to create 1 extra mouse click 
+way 1: then press Alt + ->(right arrow) 
+way 2: press the end button 
+-->
+<!--shorthand
+    ul#nav>li*5>a
+    > show that want to create 5 direct child
+    ul.subnav
+-->
+<!--ul has property B, so it takes up all width dimensions-->
+<!--mobile-menu:khi muốn làm thẻ div của  -->
+<!--Move 1 line code : Alt + down arrow 
+this : chính item nó click/bấm vào
+-->

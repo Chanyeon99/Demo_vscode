@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display fallback img when occur error</title>
+    <style>
+        .fall {
+            width: 200px;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <img class="fall" onerror="this.src='./imgerror.png'" src=",,http://static2.yan.vn/YanNews/2167221/201802/20180228-011418-11.jpg" alt="">
+</body>
+</html><!-onerror excute when pic occur error-->

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Padding</title>
+    <style>
+        .box {
+            width: 60px;
+            height: 60px;
+            color: #fff;/*chữ trắng*/
+            /*căn giữa chữ hiển thị trên box*/
+            display: flex;
+           /* align-items: center;*/
+            justify-content: center;
+
+        }
+        .box1 {
+            background-color: #333;
+        }
+        .box2 {
+            background-color: orange;
+        }
+        .box3 {
+            background-color: firebrick;
+            /*stands for, or call short hand*/
+            padding: 10px; /*4 hướng*/
+            padding: 10px 12px 8px 6px;/*top right bottompos
+            /*3 value: top left_right bottom*/
+            /*2 value: top_bottom, left_right */
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;*/
+        }
+    </style>
+</head>
+<body>
+    <!--Tạo ra 3 cái box, chung 1 class là box-->
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+</body>
+</html>

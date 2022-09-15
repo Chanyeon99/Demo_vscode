@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <!--!important is strongest, if all the elements are !important then we go back to score-->
+    <!--* select sẽ có attribute css này cho all elements nằm trong file đc nhúng file Bai11.css-->
+<head>
+    <meta charset="UTF-8">
+    <title>Priority?</title>
+    <!--Between Internal & External there will be no priority, will consider which one is writen later or is newer to display -->
+     <!--equal specificity-->
+   <style>
+        h1#id.heading-class {
+            color: blue;
+        }
+        #id.heading-class {
+            color: red;
+        }
+        .heading-class {
+            color: Purple;
+        }
+        h1 {
+            color: green;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="Bai11.css">
+</head>
+<body>
+    <div>
+        <h1 id="id" class="heading-class">Priority?</h1>
+      <h1 style="color: pink !important" id="id" class="heading-class">Priority?</h1> 
+        <ol>
+            <li>Internal, External?</li>
+            <li>Inline - 1000</li>
+            <li>#id - 100</li>
+            <li>.class -10</li>
+            <li>tag - 1</li>
+            <li>Equal specificity</li>
+            <li>Universal selector and inherited</li>
+            <i> </i>
+        </ol>
+        <h4 style="color: brown; font-size: 15px" title="this is distinguish header">Internal & external</h4>
+        <p>Between Internal & External there will be no priority, will consider which one is written later or newer to display</p>
+    </div>
+</body>
+</html>

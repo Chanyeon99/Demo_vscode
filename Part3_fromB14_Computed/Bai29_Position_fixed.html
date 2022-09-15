@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background_origin</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+        li:nth-of-type(4) {
+            color: orange;
+        }
+       p {
+           color:purple;
+       }
+       .frame {
+        width: 100%;
+        height: 50px;
+        background-color: blueviolet;
+        position: fixed;
+        top: 0;
+       }
+       .frame2 {
+           width: 100%;
+           height: 50px;
+           background-color: blueviolet;
+           position: fixed;
+           bottom: 0;
+       }
+     /*CSS cho ul - chỉnh chiều cao nó cao lên */
+     ul {
+         height: 2000px;
+     }
+     #f {
+         font-size:50px;
+     }
+     h1 {
+         margin-top: 100px;
+     }
+    </style>
+</head>
+<body>
+    <div class="frame">     
+    </div>
+    
+    <h1>Position: fixed</h1>
+    <p>when obj depends on another obj use Absolute, and when the obj depends on the browser use Fixed</p>
+    <ul>
+    <li>Relative</li>
+    <p>The relative position will not be dependent on any other object, it will take its own position as the coordinate root.</p>
+    <li>Absolute</li>
+    <li style="color: red" id="f">Fixed</li>
+    <p>Fixed is location depend on browser's frame</p>
+    <li>Sticky</li>
+    </ul>
+    <div class="frame2"></div>
+</body>
+</html>

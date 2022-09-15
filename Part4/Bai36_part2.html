@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 2 toast message</title>
+    <link rel="stylesheet" href="Bai36.css">  
+    <!-- <link rel="stylesheet" href="../Chupika_awesome/fontawesome-free-6.0.0-web/css/all.css"> -->
+</head>
+<body>
+    <div id="toast"> 
+        <div class="toast toast--success">
+            <div class=" toast__icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div> 
+            <div class="toast__body">
+                <h3 class="toast__title">Successful</h3>
+                <p class="toast__msg">I'm Lissa</p>    
+            </div>
+            <div class="toast__close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div> 
+    </div>
+    <div>
+        <div class="btn btn--success">Show success toast </div> 
+        <div class="btn btn--danger">Show danger toast </div>
+</div>
+    <script src="https://kit.fontawesome.com/3e9c9df1a4.js" crossorigin="anonymous"></script>
+<script>
+        function toast({ title='', 
+        message='',
+        type = 'info',
+        duration = 3000}){
+            const main = document.getElementBYId('toast');//hàm main của script lấy data dạng document của cái có Id  toast
+            if(main) {
+
+            }
+            }
+        toast({
+            title: 'Success',
+            message: 'The computer connect Internet(Windows, Ubuntu hoac MacOs)',
+            type: 'success',
+            duration: 3000
+        });
+    </script>
+</body>
+</html>
+ <!-- Success 
+        <div class="toast toast--error">
+            <div class="toast__icon"> 
+                <i class="fa-solid fa-circle-check"></i>
+            </div> 
+            <div class="toast__body">
+                <h3 class="toast__title">Error</h3>    
+                <p class="toast__msg">The computer connect Internet(Window, ubuntu, MacOS)</p>    
+            </div>
+            <div class="toast__close">
+                <i class="fa-solid fa-xmark"></i>
+            </div> 
+        </div>
+        <div class="toast toast--warning">
+                <div class="toast__icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div> 
+                <div class="toast__body">
+                    <h3 class="toast__title">Name</h3>
+                    <p class="toast__msg">I'm Lissa</p>    
+                </div>
+                <div class="toast__close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+</div>  -->

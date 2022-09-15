@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito|Satisfy");
+body {
+    background: radial-gradient(#fca5f1,#b5ffff);
+    font-family: 'nunito', sans-serif;
+}
+.frame {
+    position: absolute;
+    background-color:transparent;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -400px;
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.frame, .card {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flip-me {
+    position: absolute;
+    top: 30%;
+    left: 77%;
+    font-size: 1.3rem;
+    transform: rotate(-90deg);
+}
+.card {
+    width: 80%;
+    height: 40%;
+    padding: 1rem;
+    background: transparent;
+    background-size: 600% 600%;
+    animation: background 7s ease infinite;
+    perspective: 800px;
+}
+.front h1 {
+    font-family: Satisfy, cursive;
+    font-size: 8rem;
+    margin: 1rem 5rem;
+    text-shadow: 0.2rem 0.2rem 0.5rem ;
+}
+.front h1,.front h2, .fa-heart {
+    background: transparent;
+    background-size: 600% 600%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: background 7s ease infinite;
+}
+@keyframes background {
+    0%, 100% {
+        background-position: 0% 13%;
+    }
+    50% {
+        background-position: 100% 88%;
+    }
+}
+.flip-me p {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    color: rgba(255, 255, 255, 0.2);
+    padding: .8rem 0 .2rem .5rem;
+}
+.flip-me p:nth-of-type(2) {
+    opacity: 0;
+    transform: translate(-2rem);
+}
+.hvr-outline-in {
+    position: relative;
+}
+.hvr-outline-in:before {
+    content: '';
+    position: absolute;
+    border: 1px solid transparent;
+    top: -16px;
+    right: -16px;
+    bottom: -16px;
+    left: -16px;
+    opacity: 0;
+}
+.hvr-outline-in:hover:before, .hvr-outline-in:focus:before, .hvr-outline-in:active:before {
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+    opacity: 1;
+    transform: rotate(135deg) scale(3);
+    transition: .3s;
+}
+.card:hover .flip {
+    transform: rotateX(180deg) translate3d(0, 0, 0);
+    box-shadow: 20px -10px 15px 0px #fca5f1;
+}
+.flip {
+    transform-style: preserve-3d;
+    transition: all .7s ease-in-out;
+    perspective: 1000px;
+}
+.front {
+    backface-visibility: hidden;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+.back{
+    backface-visibility: hidden;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background:radial-gradient(#fca5f1,#b5ffff);
+    border-radius: 30px;
+    
+}
+.card .back {
+    transform: rotateX(-180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.back {
+    letter-spacing: 2px;
+    text-align: center;
+}
+.back h2 {
+    font-size: 2.3rem;
+    margin: .5rem;
+    color:#f32ed9;
+    text-align:center;
+}
+.back h3 {
+    color: #f32ed9;
+    font-family: satisfy, cursive;
+    font-weight: 300;
+    font-size: 1.9rem;
+    margin: 1.8rem;
+}
+.front i {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 2rem;
+    transform: rotate(45deg);
+}
+.back .fa-heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2rem;
+    transform: rotate(135deg);
+}
+.line {
+    width: 10rem;
+    height: 2px;
+    color:#852578;
+    position: absolute;
+}
+.line-3 {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#852578;
+}
+.social {
+    font-size: 1.3rem;
+    color: #f32ed9;
+}
+.social i {
+    padding: 0 .5rem;
+}
+.social i:hover {
+    color: #f771e5 ;
+    cursor: pointer;
+}
+.front h1{
+    color:transparent;
+}
+.social a{
+    color:#f32ed9;
+}

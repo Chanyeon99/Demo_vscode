@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background_origin</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+        li {
+            color: red;
+        }
+        h1 {
+            margin-top: 40px;
+            padding: 0 16px;  
+            position: sticky;
+            color:#fff;
+            background-color: #333;
+            position: -webkit-sticky;
+        }
+        ol {
+            height: 2000px;
+        }
+       p {
+           color: purple;
+       }
+       .S {
+           font-size: 70px;
+       }
+    </style>
+</head>
+<body>
+    <div class="transparent"></div>
+    <h1>Position: Sticky</h1>
+    <ol>
+        <li>Relative</li>
+        <p>The relative position will not be dependent on any other object, it will take its own position as the coordinate root.</p>
+        <li>Absolute</li>
+        <li style="color: blue" class="S">Fixed</li>
+        <p>Fixed is location depend on browser's frame</p>
+        <li>Sticky</li>
+    </ol>
+</body>
+</html>
